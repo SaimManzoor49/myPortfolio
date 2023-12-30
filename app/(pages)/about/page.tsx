@@ -35,11 +35,11 @@ function About() {
                     alt="author"
                     className="object-cover rounded-xl cursor-pointer uppercase px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_black] dark:hover:shadow-[0.5rem_0.5rem_hsl(var(--primary)),-0.5rem_-0.5rem_white]  transition"
                     height={276}
-                    width={276}
+                    width={226}
                   />
                 </div>
               </div>
-              <div className="group-hover:pb-10 transition-all duration-500 delay-200 mt-12">
+              <div className="group-hover:pb-9 transition-all duration-500 delay-200 mt-12">
                 <h1 className="font-semibold text-gray-700 dark:text-white">Muhammad Saim</h1>
                 <p className="text-gray-500 text-sm dark:text-white">Software Engineer</p>
               </div>
