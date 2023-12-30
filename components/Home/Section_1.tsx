@@ -17,7 +17,7 @@ export default function Section_1({ contributions }: { contributions: number }) 
         <p className="mt-4">Problem solving is what makes me unique.</p>
         <div className="flex gap-10 sm:gap-44">
           <div className="flex items-center gap-1 mt-16">
-            <h3 className="text-2xl sm:text-4xl">3</h3>
+            <h3 className="text-2xl sm:text-4xl">2</h3>
             <p className="text-xs">Years of <br /> Experience</p>
           </div>
           <div className="flex items-center gap-1 mt-16">
@@ -29,7 +29,7 @@ export default function Section_1({ contributions }: { contributions: number }) 
           <span className="download-button_lg">
             <span className="download-button_sl"></span>
             <span className="download-button_text">
-              <a href="../../public/MUsman.pdf" download="Muhammad_Usman.pdf">View My CV</a>
+              <a href="../../public/Saim-CV.pdf" download="Muhammad-Saim.pdf">View My CV</a>
             </span>
           </span>
         </button>
