@@ -5,14 +5,16 @@ export default async function Home() {
 
   async function getContributions(): Promise<number> {
     try {
-      const response = await fetch('https://api.github.com/users/SaimManzoor49/repos',{
-        next:{revalidate:43200}
+      const response = await fetch('https://api.github.com/users/SaimManzoor49', {
+        next: {
+          revalidate: 86400
+        }
       });
       if (!response.ok) {
         throw new Error('Failed to fetch GitHub repositories');
       }
       const data = await response.json();
-      return data.length ;
+      return data.public_repos;
     } catch (error) {
       console.error('Error fetching GitHub repositories:', error);
       throw error;
@@ -23,7 +25,7 @@ export default async function Home() {
 
   return (
     <>
-    
+
       <Section_1 contributions={contributions} />
     </>
   )

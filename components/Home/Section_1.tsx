@@ -29,7 +29,7 @@ export default function Section_1({ contributions }: { contributions: number }) 
           <span className="download-button_lg">
             <span className="download-button_sl"></span>
             <span className="download-button_text">
-              <a href="../../public/Saim-CV.pdf" download="Muhammad-Saim.pdf">View My CV</a>
+              <a href="https://drive.google.com/file/d/15rvXh13N2aF2PyfEW2besb9crqPeWbLn/view?usp=sharing" download="Muhammad-Saim.pdf">View My CV</a>
             </span>
           </span>
         </button>

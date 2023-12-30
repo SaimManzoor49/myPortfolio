@@ -1,4 +1,5 @@
 import BlogCard from '@/components/BlogCard';
+import BlogCard1 from '@/components/BlogCard1';
 import { Metadata } from 'next';
 import React from 'react';
 
@@ -20,7 +21,7 @@ const Blog: React.FC = async () => {
 
   async function fetchRepos(): Promise<Repo[]> {
     try {
-      const response = await fetch('https://api.github.com/users/UsmanMERN/repos', {
+      const response = await fetch('https://api.github.com/users/saimmanzoor49/repos', {
         next: {
           revalidate: 43200
         }
@@ -41,15 +42,16 @@ const Blog: React.FC = async () => {
     <div className="overflow-y-scroll scrollBar" style={{ maxHeight: '70vh' }}>
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-          Blog
+          Github
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          My Recent Coding Projects Showcase
+          My Recent Coding Projects Source Code
         </p>
       </div>
-      <div className="grid grid-cols-1 xsm:grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-items-center mx-9">
+      <div className="grid grid-cols-1 xsm:grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-items-center mx-9">
         {repos?.map((repo, i) => (
-          <BlogCard repo={repo} key={i} />
+          // <BlogCard repo={repo} key={i} />
+          <BlogCard1 repo={repo} key={i} />
         ))}
       </div>
     </div>

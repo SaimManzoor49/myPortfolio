@@ -116,12 +116,12 @@ export default function Bottombar() {
                                     whileHover="hover"
                                     whileTap="tap"
                                     variants={buttonVariants}
-                                    className={`grid items-center gap-4 ${isActive('/blog') && 'active'}`}>
+                                    className={`grid items-center gap-4 ${isActive('/github') && 'active'}`}>
                                     <SheetClose asChild>
                                         <Link href={'/blog'}>
                                             <button
                                                 className={`p-2 xsm:p-4 font-bold rounded-xl flex gap-4 items-center justify-center  text-xs xsm:text-sm `}>
-                                                <GiTechnoHeart size={'24px'} />Blog
+                                                <GiTechnoHeart size={'24px'} />Github
                                             </button>
                                         </Link>
                                     </SheetClose>
