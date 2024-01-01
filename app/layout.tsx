@@ -40,7 +40,7 @@ export default function RootLayout({
           <Background />
           <Header />
           <main>
-            <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0">
+            <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0 max-w-screen-2xl">
               {children}
               <Analytics />
             </div>
