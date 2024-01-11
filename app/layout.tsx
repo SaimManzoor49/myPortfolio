@@ -10,6 +10,7 @@ import Background from '@/components/Background';
 import RightArrow from '@/components/RightArrow';
 import Canvas from '@/components/canvas';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://usmandev.vercel.app"),
@@ -42,6 +43,7 @@ export default function RootLayout({
           <main>
             <div className="px-6 md:px-4 lg:px-36  mt-8 sm:mt-0 max-w-screen-2xl mx-auto">
               {children}
+              <SpeedInsights />
               <Analytics />
             </div>
           </main>
